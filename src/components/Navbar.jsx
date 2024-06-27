@@ -28,6 +28,7 @@ const Navbar = () => {
     return (
         <nav>
             <span className='date'>{date}</span>
+            <span className='clipboard'>📋</span>
             <span className='time'>{time}</span>
         </nav>
     )

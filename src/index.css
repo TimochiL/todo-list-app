@@ -10,7 +10,7 @@ nav {
     background-color: #61C9A8;
     padding: 0.6rem 1rem 0.6rem 1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     position: fixed;
     width: 98vw;
@@ -21,6 +21,11 @@ nav {
 }
 nav .date {
     text-align: left;
+}
+nav .clipboard {
+    text-align: center;
+    font-size: 20px;
+    margin: -5px 0;
 }
 nav .time {
     text-align: right;
