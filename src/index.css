@@ -1,0 +1,130 @@
+body {
+    background-color: #E1DD8F;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding-top: 1.3rem;
+    padding-bottom: 4.3rem;
+}
+
+nav {
+    background-color: #61C9A8;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    position: fixed;
+    width: 98vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid black;
+}
+nav .date {
+    text-align: left;
+}
+nav .time {
+    text-align: right;
+    margin-right: 5px;
+}
+
+.to-do-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.to-do-list .header-input-container,
+.to-do-list .task-list,
+.to-do-list .completed-list {
+    background-color: #4C86A8;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 450px;
+    list-style-type: none;
+    padding: 30px;
+    border: 2px solid;
+}
+.to-do-list .header-input-container h1 {
+    margin: 0;
+}
+.to-do-list .header-input-container .input-add-container {
+    display: flex;
+    justify-content: center;
+}
+.to-do-list .header-input-container .input-add-container input {
+    margin-top: 1.5em;
+    padding: 0.7em 0.5em 0.6em 1em;
+    border-radius: 15px 0 0 15px;
+}
+.to-do-list .header-input-container .input-add-container .add-button {
+    margin-top: 1.5em;
+    padding: 0 7px 0 5px;
+    border-radius: 0 15px 15px 0;
+}
+.to-do-list .task-list,
+.to-do-list .completed-list {
+    margin-bottom: 0;
+}
+.to-do-list .task-list li,
+.to-do-list .completed-list li {
+    display: grid;
+    grid-template-columns: 9fr 2fr 1fr;
+    grid-template-rows: 3fr 3fr 1fr;
+    gap: 3px;
+    margin-top: 10px;
+    border-bottom: 2px solid;
+    border-radius: 2px;
+}
+.to-do-list .completed-list li {
+    grid-template-columns: 8fr 2fr 2fr;
+}
+.to-do-list .task-list li .task-text,
+.to-do-list .completed-list li .task-text {
+    text-align: left;
+    padding: 15px 0;
+    text-wrap: wrap;
+    grid-row: 1 / 3;
+    grid-column-start: 1;
+    word-break: break-all;
+}
+
+.to-do-list button {
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+.to-do-list button:hover {
+    background-color: white;
+}
+.to-do-list .task-list li .delete-button,
+.to-do-list .completed-list li .return-button,
+.to-do-list .completed-list li .trash-button {
+    grid-row: 1 / 3;
+    font-size: 24px;
+}
+.to-do-list .task-list li .delete-button {
+    grid-column-start: 2;
+    padding-bottom: 8px;
+}
+.to-do-list .task-list li .move-button {
+    grid-column-start: 3;
+}
+.to-do-list .completed-list li .return-button,
+.to-do-list .completed-list li .trash-button {
+    padding-bottom: 4px;
+}
+
+.to-do-list .task-list h3,
+.to-do-list .completed-list h3 {
+    margin-top: 5px;
+}
+
+footer {
+    background-color: #61C9A8;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    border-top: 2px solid black;
+}
