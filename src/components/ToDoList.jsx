@@ -66,7 +66,7 @@ const ToDoList = () => {
                     <span className='task-text'>{index+1}. {task}</span>
                     <button className='delete-button'
                             onClick={() => deleteTask(index)}>
-                        ✔️
+                        ✔
                     </button>
                     <button className='move-button'
                             onClick={() => moveTaskUp(index)}>
@@ -86,11 +86,11 @@ const ToDoList = () => {
                     <span className='task-text'>{task}</span>
                     <button className='return-button'
                             onClick={() => returnTask(index)}>
-                        ↩️
+                        <span>↩️</span>
                     </button>
                     <button className='trash-button'
                             onClick={() => trashTask(index)}>
-                        ❌
+                        <span>❌</span>
                     </button>
                 </li>)}
             </ol>
