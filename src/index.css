@@ -13,10 +13,8 @@ nav {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     position: fixed;
-    width: 98vw;
+    width: calc(100% - 32px);
     top: 0;
-    left: 0;
-    right: 0;
     border-bottom: 2px solid black;
 }
 nav .date {
@@ -132,4 +130,36 @@ footer {
     width: 100%;
     padding: 10px;
     border-top: 2px solid black;
+}
+
+@media (max-width: 600px) {
+    .to-do-list .header-input-container,
+    .to-do-list .task-list,
+    .to-do-list .completed-list {
+        width: 380px;
+    }
+}
+@media (max-width: 500px) {
+    .to-do-list .header-input-container,
+    .to-do-list .task-list,
+    .to-do-list .completed-list {
+        width: 280px;
+    }
+}
+@media (max-width: 400px) {
+    nav {
+        font-size: 14px;
+    }
+    .to-do-list .header-input-container,
+    .to-do-list .task-list,
+    .to-do-list .completed-list {
+        width: 200px;
+    }
+    .to-do-list .header-input-container .input-add-container {
+        width: 80%;
+        padding-left: 1.3rem;
+    }
+    footer {
+        font-size: 14px;
+    }
 }
