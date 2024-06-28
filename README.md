@@ -4,6 +4,8 @@ This app uses Vite and React to create a client-side rendered web application.
 
 Stay focused with an organizable list of the tasks and assignments you need to complete, sortable based on your priorities.
 
+Use the ⬆ and ⬇ buttons to sort your tasks
+
 Once you've finished a task, move the task down to the list of completed tasks with the ✔️ button.
 
 To return the task to the list of in-progress tasks, use the ↩️ button.

@@ -1,5 +1,5 @@
 body {
-    background-color: #E1DD8F;
+    background-color: aliceblue;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding-top: 1.3rem;
@@ -7,7 +7,9 @@ body {
 }
 
 nav {
-    background-color: #61C9A8;
+    background-color: rgba(240, 248, 255, 0.827);
+    border-bottom: 2px solid;
+    color: #676767;
     padding: 0.6rem 1rem 0.6rem 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -15,7 +17,7 @@ nav {
     position: fixed;
     width: calc(100% - 32px);
     top: 0;
-    border-bottom: 2px solid black;
+    
 }
 nav .date {
     text-align: left;
@@ -39,7 +41,7 @@ nav .time {
 .to-do-list .header-input-container,
 .to-do-list .task-list,
 .to-do-list .completed-list {
-    background-color: #4C86A8;
+    background-color: rgb(202, 213, 222);
     text-align: center;
     border: 2px solid black;
     border-radius: 10px;
@@ -89,11 +91,12 @@ nav .time {
     text-wrap: wrap;
     grid-row: 1 / 3;
     grid-column-start: 1;
-    word-break: break-all;
+    word-break: break-word;
 }
-
+.to-do-list input,
 .to-do-list button {
     background-color: aliceblue;
+    border: 2px solid black;
     border-radius: 15px;
 }
 .to-do-list button:hover {
@@ -123,13 +126,14 @@ nav .time {
 }
 
 footer {
-    background-color: #61C9A8;
+    background-color: rgba(240, 248, 255, 0.827);
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     padding: 10px;
-    border-top: 2px solid black;
+    border-top: 2px solid;
+    color: #676767;
 }
 
 @media (max-width: 600px) {
